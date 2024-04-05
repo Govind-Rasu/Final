@@ -1,10 +1,2 @@
 This is the file for collabrate from Local server
-
-This is the file for collabrate 
-Now editing from Govind-Rasu
-
-Now edited form Local
-Now edited from Govind-Rasu
-
-Now edited form Local
-
+I have deleted all lines and planning to do revert option
