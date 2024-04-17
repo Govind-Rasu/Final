@@ -1,2 +1,3 @@
 #!/bin/bash
 echo "Script file created in GIT Hub"
+echo "Script updated in Local"
