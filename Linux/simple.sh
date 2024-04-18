@@ -6,4 +6,4 @@ echo "Done"
 
 echo "Updated from Local"
 
-echo "File edited from Git Hub"
+echo "File edited in local to identify the change"
