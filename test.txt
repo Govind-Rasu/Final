@@ -1,1 +1,3 @@
 echo "File added from new Local server"
+
+echo "File modified in Git"
