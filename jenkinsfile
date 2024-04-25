@@ -7,7 +7,7 @@ label 'Node2'
         {
             steps
             {
-                sh "This is first stage"
+                sh "echo This is first stage"
             }
         }
         
