@@ -1,5 +1,7 @@
 pileline{
-    agent any
+    agent {
+label 'Node2'
+}
     stages{
         stage('First stage')
         {
@@ -8,13 +10,6 @@ pileline{
                 sh "This is first stage"
             }
         }
-        stage('Second stage')
-          {
-            steps
-            {
-                sh "This is Second stage"
-            }
-           }
-        }
+        
     }
 }
