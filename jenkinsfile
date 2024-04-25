@@ -1,0 +1,20 @@
+pileline{
+    agent any
+    stages{
+        stage('First stage')
+        {
+            steps
+            {
+                sh "This is first stage"
+            }
+        }
+        stage('Second stage')
+          {
+            steps
+            {
+                sh "This is Second stage"
+            }
+           }
+        }
+    }
+}
