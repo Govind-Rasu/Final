@@ -1,7 +1,0 @@
-echo "File added from new Local server"
-
-echo "File modified in Git"
-
-echo "File edited from Git "
-
-echo "Now file edited from Local"
