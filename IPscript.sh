@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script {
                     def IPaddr = sh(script: 'curl ifconfig.me', returnStdout: true).trim()
-                    echo "Public IP address of the Jenkins server is: ${IPaddr}"
+                    echo "Public IP address of Jenkins server is: ${IPaddr}"
                 }
                 script {
                     def IPaddr = sh(script: 'ifconfig', returnStdout: true).trim()
