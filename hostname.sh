@@ -6,7 +6,11 @@ pipeline {
             steps {
                 script {
                     def servername = sh(script: 'uname -n', returnStdout: true).trim()
+<<<<<<< HEAD
                     echo "The hostname of  server is: ${servername}"
+=======
+                    echo "The hostname of server is: ${servername}"
+>>>>>>> 551d727de3474dc818a70eb8455de306397662d8
                 }
             }
         }
