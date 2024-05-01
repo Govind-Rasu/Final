@@ -1,4 +1,5 @@
 pipeline {
+    
     agent any
      stages {
         stage('To get the IP address of Jenkins')
@@ -16,7 +17,8 @@ pipeline {
         }
     
     
-        stage('To get the IP address of Node1 machine') {
+        stage('To get the IP address of Node1 machine') 
+        {
             agent {label'Node1'}
             steps {
                 script {
@@ -29,10 +31,10 @@ pipeline {
                 }
             }
         }
-        stage('To get the IP address of Node2 machine') {
+        stage('To get the IP address of Node2 machine') 
+        {
             agent {label'Node2'}
             steps {
-                script {
                     script {
                     def IPaddr = sh(script: 'curl ifconfig.me', returnStdout: true).trim()
                     echo "Public IP address of the Node2 server is: ${IPaddr}"
@@ -44,8 +46,5 @@ pipeline {
             }
         }
     }
+        
 }
-
-
-
-
