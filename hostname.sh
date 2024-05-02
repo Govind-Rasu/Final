@@ -5,8 +5,8 @@ pipeline {
         {
             steps {
                 script {
-                    def servername = sh(script: 'ifconfig', returnStdout: true).trim()
-                    echo "The IPconfig of the Main server is: ${servername}"
+                    def servername = sh(script: 'curl ifconfig.me', returnStdout: true).trim()
+                    echo "The Public IP of the Main server is: ${servername}"
                 }
             }
         }
