@@ -5,8 +5,8 @@ pipeline {
         {
             steps {
                 script {
-                    def servername = sh(script: 'curl ifconfig.me', returnStdout: true).trim()
-                    echo "The Public IP Address of the Main server is: ${servername}"
+                    def servername = sh(script: 'uname -n', returnStdout: true).trim()
+                    echo "The Hostname of the Main server is: ${servername}"
                 }
             }
         }
@@ -25,8 +25,8 @@ pipeline {
             agent {label'Node2'}
             steps {
                 script {
-                    def servername = sh(script: 'uname -n', returnStdout: true).trim()
-                    echo "The hostname of the Node2 is: ${servername}"
+                    def servername = sh(script: 'curl ifconfig.me', returnStdout: true).trim()
+                    echo "The public IP address of the Node2 is: ${servername}"
                 }
             }
         }
