@@ -25,7 +25,7 @@ pipeline {
             agent {label'Node2'}
             steps {
                 script {
-                    def servername = sh(script: 'uname -n', returnStdout: true).trim()
+                    def servername = sh(script: 'ifconfig', returnStdout: true).trim()
                     echo "The hostname of the Node2 : ${servername}"
                 }
             }
