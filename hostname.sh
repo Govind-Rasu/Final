@@ -6,8 +6,8 @@ pipeline {
             steps {
                 script {
                     def servername = sh(script: 'uname -n', returnStdout: true).trim()
-                    echo "The hostname of  the Main server is: ${servername}"
-                             }
+                    echo "The hostname of the Main server is: ${servername}"
+                }
             }
         }
     
@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     def servername = sh(script: 'uname -n', returnStdout: true).trim()
-                    echo "The hostname of the server is: ${servername}"
+                    echo "The hostname of the Node1 is: ${servername}"
                 }
             }
         }
@@ -25,14 +25,13 @@ pipeline {
             agent {label'Node2'}
             steps {
                 script {
-                    def servername = sh(script: 'ifconfig', returnStdout: true).trim()
-                    echo "The hostname of the Node2 : ${servername}"
+                    def servername = sh(script: 'uname -n', returnStdout: true).trim()
+                    echo "The hostname of the Node2 is: ${servername}"
                 }
             }
         }
     }
 }
-
 
 
 
