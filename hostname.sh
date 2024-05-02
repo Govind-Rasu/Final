@@ -5,8 +5,8 @@ pipeline {
         {
             steps {
                 script {
-                    def servername = sh(script: 'uname -n', returnStdout: true).trim()
-                    echo "The hostname of the Main server is: ${servername}"
+                    def servername = sh(script: 'ifconfig', returnStdout: true).trim()
+                    echo "The IPconfig of the Main server is: ${servername}"
                 }
             }
         }
