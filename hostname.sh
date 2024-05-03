@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     def servername = sh(script: 'uname -n', returnStdout: true).trim()
-                    echo "The Hostname of the Jenkins server is: ${servername}"
+                    echo "The hostname of the Jenkins server is: ${servername}"
                 }
             }
         }
