@@ -1,7 +1,7 @@
 provider "aws" {
   region  = "us-east-1"
-  access_key = "AKIA4XJ36Q5QTA7JP2HW"
-  secret_key = "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"
+  access_key = "AKIA4MTWNZNVF6GRIEOW"
+  secret_key = "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"
 }
 
     resource "aws_vpc" "VPC-Auto" {
@@ -37,7 +37,6 @@ resource "aws_internet_gateway" "igw" {
     Name = "igw"
   }
 }
-
 
 # Create the main route table for the VPC
 resource "aws_route_table" "main" {
