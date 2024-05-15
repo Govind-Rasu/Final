@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIA4MTWNZNVF6GRIEOW"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 # Data sources to retrieve default VPC and subnets
